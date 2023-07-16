@@ -33,6 +33,7 @@ def Coalesce(data: list[dict]):
     for idx in range(1, len(data)):
         if equal(data[idx - 1], data[idx]):
             rst[-1]['amount'] += data[idx]['amount']
+            rst[-1]['amount'] = round(rst[-1]['amount'], 2)
         else:
             rst.append(data[idx])
     return rst
