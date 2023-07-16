@@ -15,6 +15,7 @@ ECNU ECard 账单导出为[钱迹](https://www.qianjiapp.com/)格式。
 
 - 数据获取：通过小程序抓包获得session key （参考[woria的博客](https://www.woria.xyz/2021/11/02/ECNU%E6%89%93%E5%8D%A1/)），然后直接批量发起HTTP POST请求获取数据。
   - 需要注意的是，最近Win上无法抓包了，但是Mac上可以
+  - Update 23/07/16: 似乎Win上又可以抓包了。
 - 格式转换：做简单处理后生成目标格式的csv即可。
   - 转换的配置在 <u>config.yaml</u>
 
