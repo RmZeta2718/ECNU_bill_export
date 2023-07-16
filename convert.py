@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from objprint import op
 
 def ParseConfig(config_file: str='config.yaml') -> dict[str, dict]:
-    with open(config_file, 'r') as f:
+    with open(config_file, 'r', encoding='utf-8') as f:
         conf = yaml.safe_load(f)
         # op(conf)
     meta = {}
