@@ -4,7 +4,7 @@ ECNU ECard 账单导出为[钱迹](https://www.qianjiapp.com/)格式。
 
 # Usage
 
-- `cp config.py.example config.py`
+- `cp config.example.py config.py`
 - 抓包得到 header 中的 `sw-Authorization` ，填入 <u>config.py</u>
 - `./main.py --year 2022`
 - 导出文件： <u>out/dump.csv</u> 
